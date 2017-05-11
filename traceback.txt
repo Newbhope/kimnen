@@ -1,0 +1,43 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/chapter1.rpy", line 19, in script
+    m "Alright. Let’s load the car and head out."
+IOError: Couldn't find file 'hang_up.mp3'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/chapter1.rpy", line 19, in script
+    m "Alright. Let’s load the car and head out."
+  File "D:\OneDrive\Kim Nen\renpy-6.99.12.1-sdk\renpy\ast.py", line 613, in execute
+    renpy.exports.say(who, what, interact=self.interact)
+  File "D:\OneDrive\Kim Nen\renpy-6.99.12.1-sdk\renpy\exports.py", line 1142, in say
+    who(what, interact=interact)
+  File "D:\OneDrive\Kim Nen\renpy-6.99.12.1-sdk\renpy\character.py", line 876, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "D:\OneDrive\Kim Nen\renpy-6.99.12.1-sdk\renpy\character.py", line 715, in do_display
+    **display_args)
+  File "D:\OneDrive\Kim Nen\renpy-6.99.12.1-sdk\renpy\character.py", line 507, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "D:\OneDrive\Kim Nen\renpy-6.99.12.1-sdk\renpy\ui.py", line 285, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "D:\OneDrive\Kim Nen\renpy-6.99.12.1-sdk\renpy\display\core.py", line 2492, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "D:\OneDrive\Kim Nen\renpy-6.99.12.1-sdk\renpy\display\core.py", line 2791, in interact_core
+    renpy.audio.audio.interact()
+  File "D:\OneDrive\Kim Nen\renpy-6.99.12.1-sdk\renpy\audio\audio.py", line 930, in interact
+    periodic()
+  File "D:\OneDrive\Kim Nen\renpy-6.99.12.1-sdk\renpy\audio\audio.py", line 864, in periodic
+    c.periodic()
+  File "D:\OneDrive\Kim Nen\renpy-6.99.12.1-sdk\renpy\audio\audio.py", line 403, in periodic
+    topf = load(self.file_prefix + filename + self.file_suffix)
+  File "D:\OneDrive\Kim Nen\renpy-6.99.12.1-sdk\renpy\audio\audio.py", line 67, in load
+    rv = renpy.loader.load(fn)
+  File "D:\OneDrive\Kim Nen\renpy-6.99.12.1-sdk\renpy\loader.py", line 543, in load
+    raise IOError("Couldn't find file '%s'." % name)
+IOError: Couldn't find file 'hang_up.mp3'.
+
+Windows-8-6.2.9200
+Ren'Py 6.99.12.2.2029
+Kim Nen 1.0
