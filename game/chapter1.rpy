@@ -39,7 +39,7 @@ label chapter1:
     scene dining room table
     "I head down and help set up the table. The three of us sit around the end of it. My brother and sister moved out awhile ago, so it’s rarely full."
     m "What did you make Mommy?"
-    mom "Bun thit nuong."
+    mom "Bánh hỏi with pork."
     m "Yay!"
     "One of my favorite Vietnamese dishes. I didn’t eat any Vietnamese food while at school due to my laziness and the difficulty of making it."
     dad "Johnny, can you get me a cup of tea too?"
