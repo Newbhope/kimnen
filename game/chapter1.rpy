@@ -2,7 +2,7 @@ label chapter1:
     scene black with dissolve
     "August 6, 2016"
 
-    scene apartment
+    scene apartment with dissolve
 
     m "Everyone got everything packed? You guys better use the bathroom too, or I’m going to kick you out of the car."
     patrick "Yup. Did all of that."
@@ -17,26 +17,34 @@ label chapter1:
     mom "Bye!"
     #play sound "hang_up.mp3"
     m "Alright. Let’s load the car and head out."
-    scene car highway
+    scene car uofi with wipeleft
     "Just like the other times I’ve driven back to the Chicago suburbs, I play through video game soundtracks while talking about random things with my friends."
+    scene car midway1 with dissolve
+    ""
+    scene car midway2 with dissolve
     "Corn fields slowly transform into buildings and highway lanes as we get closer to the city."
-    "I drop off Patrick and then Dan. Finally, it was time to head back to my house. "
-    scene front door night
+    scene car midway3 with dissolve
+    "I drop off Patrick and then Dan. Finally, it was time to head back to my house."
+    scene car suburbs with dissolve
+    ""
+
+    scene front door night with dissolve
     "I get into the driveway, ring the doorbell, and bring most of my bags to the front door. My dad answers the door."
-    dad "Hey Johnny. Is that all of the bags?"
+    dad "Hi Johnny. Is that all of the bags?"
     m "I think I have one more. Let me get it from the car."
-    scene dining room
+    scene dining room with dissolve
     "I get my last backpack and head into the house. I see my mom to the left in the kitchen."
     mom "Hi Johnny! I’ve missed you!"
     "We both hug and kiss each other on the cheek."
     m "Hi Mommy. I’m pretty tired, so I’m going to bring my bags up to my room and rest for a bit."
     mom "Ok, dinner will be ready soon!"
     m "Alright, thanks."
-    scene my room house with dissolve
+    #some transition going up stairs and noises
+    scene my room house night with dissolve
     "I head up to my room and leave my stuff on the floor. The only thing I unpack is my laptop."
     mom "Johnny! Dinner’s ready!"
     m "Ok!"
-    scene dining room table
+    scene dining room table with dissolve
     "I head down and help set up the table. The three of us sit around the end of it. My brother and sister moved out awhile ago, so it’s rarely full."
     m "What did you make Mommy?"
     mom "Bánh hỏi with pork."
@@ -48,6 +56,7 @@ label chapter1:
 
     "The meal passes by with idle chatter and the TV playing in the background. I happily finish my plate and cup of milk. The conversation shifts to my summer internship."
     m "Oh yeah. Here’s pictures of my trip to the John Deere headquarters."
+    #blur background, remove phone screen
     show johndeere1 at center_above with dissolve
     mom "Wow! The building looks so pretty. "
     m "Yeah. It was pretty interesting how much nature they had inside the offices."
@@ -67,7 +76,7 @@ label chapter1:
     "Tea from home is always the best. My mom usually makes jasmine tea after dinner."
     mom "Ok. I'll tell you to come down when it's ready."
     "I kiss her quickly on the cheek and head upstairs. My dad heads to his usual recliner."
-    scene my room house
+    scene my room house night with dissolve
     "I launch my usual websites and the group chat I have with my friends."
     scene patrick dm with dissolve
     #play sound
@@ -88,7 +97,7 @@ label chapter1:
     mom "Careful, it's hot."
     m "Ok."
     #not as quick stair noises
-    scene my room house
+    scene my room house night with dissolve
     scene laptop
     m "Alright I’m back. Everyone ready?"
     #transition
@@ -100,10 +109,10 @@ label chapter1:
     will "Good night."
     patrick "Night."
     #discord hange up noises
-    scene my room house with dissolve
+    scene my room house night with dissolve
     #light switch noise
     scene black with dissolve
-    scene my room house with dissolve
+    scene my room house night with dissolve
     "August 9, Tuesday"
     dad "Hey Johnny. Can you help me get groceries from Costco?"
     m "Sure. Let me change."
@@ -119,12 +128,12 @@ label chapter1:
     dad "Oh yeah. I need your help with putting up curtains and cutting the grass."
     m "Ok."
     mt "Ugh this is such a pain. I wanted to work on my bus app too…"
-    scene my room house with dissolve
+    scene my room house day with dissolve
     "I like confiding in my sister with family matters."
     #text noises
     show 8-9 at center_above with dissolve
     ""
-    scene my room house blurred with dissolve
+    scene my room house day blurred with dissolve
     m "Guess I should talk to mommy about the doctor's."
     scene main stairs
     scene basement stairs
@@ -194,7 +203,7 @@ label chapter1:
     scene black
     #play lightswitch
     "August 16, Tuesday"
-    scene my room house
+    scene my room house day
     m "Mommy! Are you ready yet!"
     mom "Yeah! Just wait a little bit longer!"
     scene front door day
@@ -211,14 +220,14 @@ label chapter1:
     mom "Can we stop by the grocery story and the pharmacy?"
     m "Sure."
     #time pass
-    scene front door
-    scene living room
+    scene front door day
+    ""
+    scene black with dissolve
     "A few days pass as we wait for the phone call to approve the CT scan. My dad worries over every ring of the home phone. I brush it all off and spend time coding and playing with friends."
     "Before I know it, it’s time to head back to school."
-    scene black with dissolve
     #play light noise
     "August 21, Sunday"
-    scene my room house with dissolve
+    scene my room house day with dissolve
     dad "Johnny! Did you pack everything yet?"
     m "Almost! I’ll bring everything down after I shower!"
     "After getting ready, I head downstairs to eat a quick lunch."
