@@ -36,7 +36,7 @@ define gui.about = _("")
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "Kimen"
+define build.name = "Kimnen"
 
 
 ## Sounds and music ############################################################
@@ -79,10 +79,12 @@ define config.exit_transition = dissolve
 
 define config.after_load_transition = None
 
+## Used when entering the main menu from the splashscreen.
+define config.end_splash_transition = dissolve
 
 ## Used when entering the main menu after the game has ended.
 
-define config.end_game_transition = None
+define config.end_game_transition = dissolve
 
 
 ## A variable to set the transition used when the game starts does not exist.

@@ -2,7 +2,6 @@
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
-#TODO: change color of characters except for mommy
 define pm = Character("Present Me", who_color = "#1c5593")
 define m = Character("Me", who_color = "#2162a8")
 define mt = Character("My Thoughts", who_color = "#143b66")
@@ -28,9 +27,11 @@ transform center_above:
 
 
 label splashscreen:
-    scene black with fade
+    # define fadehold = Fade(1.0, 2.0, 1.0)
+
+    scene black with pixellate
     pause 0.5
-    $ renpy.transition(dissolve)
+    # $ renpy.transition(fadehold)
     return
 
 label start:
@@ -38,7 +39,7 @@ label start:
     scene black
     pause 1.0
 
-    jump in_progress
+    # jump in_progress
 
     pm "This... is a hard story to tell."
 
@@ -55,7 +56,7 @@ label start:
     scene main quad gray with dissolve
     pm "Before that though, some background on me and my family."
     pm "At the time, I was an incoming junior studying computer science at the University of Illinois Urbana Champaign. I lived on campus for the summer working as an intern."
-    pm "My family situation was average from what I could tell. I called back home once in awhile to talk with my parents and talked with my older brother and sister on occasion."
+    #pm "My family situation was fine from what I could tell. I called back home once in awhile to talk with my parents and talked with my older brother and sister on occasion."
     pm "My parents were immigrants from Vietnam. They fled the country after the war ended due to the oppression of the new government. They had me pretty late though, so I’m far removed from all of that."
     pm "Both of my siblings are a good deal older because of that. I just attended my brother’s wedding a month prior."
     pm "My dad’s english was pretty good, but my mom spoke to me in broken English interspersed with Vietnamese. It felt pretty natural to me though since I grew up with it."

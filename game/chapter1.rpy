@@ -32,7 +32,7 @@ label chapter1:
     "I get into the driveway, ring the doorbell, and bring most of my bags to the front door. My dad answers the door."
     dad "Hi Johnny. Is that all of the bags?"
     m "I think I have one more. Let me get it from the car."
-    scene dining room with dissolve
+    scene dining room night with dissolve
     "I get my last backpack and head into the house. I see my mom to the left in the kitchen."
     mom "Hi Johnny! I’ve missed you!"
     "We both hug and kiss each other on the cheek."
@@ -128,15 +128,17 @@ label chapter1:
     dad "Oh yeah. I need your help with putting up curtains and cutting the grass."
     m "Ok."
     mt "Ugh this is such a pain. I wanted to work on my bus app too…"
-    scene my room house day with dissolve
+    scene my room house day blurred with dissolve
     "I like confiding in my sister with family matters."
     #text noises
     show 8-9 at center_above with dissolve
     ""
-    scene my room house day blurred with dissolve
+    scene my room house day with dissolve
     m "Guess I should talk to mommy about the doctor's."
     scene main stairs
+    ""
     scene basement stairs
+    ""
     scene basement with wipeleft
     "This is where my mom does her job of making hair bows from ribbons."
     m "Hi Mommy."
@@ -154,10 +156,10 @@ label chapter1:
     m "I think I'll try to schedule it next week."
     mom "Ok. Make sure I'm with the woman doctor."
     m "Ok."
-    scene my room house with dissolve
+    scene my room house day with dissolve
     #phone noises
     "I schedule the doctor's appointment and put it in my calendar"
-    scene my room house blurred with dissolve
+    scene my room house day blurred with dissolve
     show august calendar at truecenter with dissolve
     ""
     mt "Oh yeah. Mommy and I are going to visit Lisa in Chicago this weekend."
@@ -167,6 +169,7 @@ label chapter1:
 
     scene black with dissolve
     "August 12, Friday"
+    #Different image?
     scene my room house with dissolve
     m "Are you ready yet Mommy?"
     mom "Yeah. Five more minutes."
@@ -179,16 +182,19 @@ label chapter1:
     scene train station
     "We somehow make it to the train station on time. My dad drops us off and we wave goodbye."
     #play noise
+    #scene transition
     scene chicago with dissolve
     m "Finally. Let's go mommy."
     mom "Ok. Make sure you hold my hand."
     m "Fine."
     "My mom smiles happily as we head to the street. Lisa and Dan pick us up, and we head to the restaurant."
+    #some scene transition
     scene restaurant
     lisa "We ordered a lot so dig in!"
     m "Thanks!"
     "Dinner proceeds blissfully as multiple great dishes come in one after the other. We head back to my sister’s apartment afterwards."
     #TODO: food images? more description?
+    #some scene transition
     scene lisa condo with dissolve
     lisa "Do you guys want to see a movie? There isn’t too much else to do right now."
     m "Sure. Mommy?"
@@ -200,14 +206,15 @@ label chapter1:
     lisa "Do you think mommy will be okay?"
     m "Think so. She usually has stomach issues after eating. I scheduled a doctor’s appointment with her for Tuesday."
     lisa "That’s good. Hopefully it’s nothing too serious."
-    scene black
+    scene black wtih dissolve
     #play lightswitch
     "August 16, Tuesday"
-    scene my room house day
+    scene my room house day with dissolve
     m "Mommy! Are you ready yet!"
     mom "Yeah! Just wait a little bit longer!"
-    scene front door day
-    #play car noise
+    scene front door day with dissolve
+    ""
+    #travel transition
     scene doctors with fade
     "My physical proceeds normally. Pretty much nothing has changed from last year."
     "After I get back to the waiting room, my mom is called in to see the same doctor."
@@ -215,13 +222,11 @@ label chapter1:
     scene doctors with fade
     "My mom finally returns to the waiting room."
     m "What did the doctor say?"
-    mom "She wasn’t sure what was wrong exactly, but she said she'll try to schedule a CT scan for me. I also need to pick up medicine to help me go to the toilet."
+    mom "She wasn’t sure what was wrong exactly, but she said she'll try to schedule a CT scan for me. Also, I need medicine to help me go to toilet."
     m "Oh. Ok."
-    mom "Can we stop by the grocery story and the pharmacy?"
+    mom "Can we stop by the grocery story and pharmacy?"
     m "Sure."
-    #time pass
-    scene front door day
-    ""
+
     scene black with dissolve
     "A few days pass as we wait for the phone call to approve the CT scan. My dad worries over every ring of the home phone. I brush it all off and spend time coding and playing with friends."
     "Before I know it, it’s time to head back to school."
@@ -231,13 +236,15 @@ label chapter1:
     dad "Johnny! Did you pack everything yet?"
     m "Almost! I’ll bring everything down after I shower!"
     "After getting ready, I head downstairs to eat a quick lunch."
+    scene dining room day
     mom "Johnny, can you grill the food I marinated for you? I’m too tired right now."
     "My mom always makes food for me to bring back to school. Helps a lot when I have to return to an empty fridge."
     m "Sure. Are you ok?"
     mom "Yeah. I’ll be downstairs making bows. Tell me if you need help."
     scene backyard
-    "I eat lunch while grilling the chicken and ribs. I head down to the basement to check on my mom and ask for the right temperature."
+    "I eat lunch while grilling the chicken and ribs. I stop by the basement to check on my mom and to ask for help."
     #TODO: feels slightly awkward here?
+    #TODO: maybe short downstairs scene back up to backyard
     #time pass
     scene front door day
     "I pack the food and the rest of my stuff in my car."
@@ -246,8 +253,8 @@ label chapter1:
     dad "Sure. Say bye to your mom too."
 label in_progress:
     scene my room house with dissolve
-    ""
-    scene inside front door
+    mt "Hm. Don't think I forgot anything. I'll be back soon anyways."
+    scene inside front door with dissolve
     "My mom comes up from the basement to say goodbye."
     mom "Bye Johnny. I’ll miss you!"
     "We hug and kiss each other on the cheeks."
@@ -255,12 +262,12 @@ label in_progress:
     mom "Do you have all the food packed?"
     m "Yeah. I think I have everything. Bye Mommy!"
     scene front door day with dissolve
-    "I head out of the house to my car and message my friends and roommates that I’m heading out to pick them up."
-    dad "The car should be all good. Bye Johnny."
-    m "Bye Daddy. See you in two weeks."
-    "As I’m about to start driving, my mom waves goodbye from the doorway. I wave goodbye to my parents then head off to my friend’s house."
+    "I head out of the house to my car and message my friends that I’m heading out to pick them up."
+    dad "The car should be ready. Bye Johnny."
+    m "Bye Daddy. See you in two weeks!"
+    "As I’m about to start driving, my mom waves goodbye from the doorway. I wave goodbye to my parents then head off to my friends' houses."
     scene black with dissolve
-    pm "Unbeknownst to me at the time, that would be the last I’d see my mom in a relatively healthy state."
+    pm "Unbeknownst to me at the time, that would be the last I’d see my mom in a healthy state."
 
     #Around 10-12 minutes or reading so far
 
