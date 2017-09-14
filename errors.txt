@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-The label in_progress is defined twice, at
-  File "game/chapter1.rpy", line 150 and
-  File "game/chapter1.rpy", line 239.
+File "game/options.rpy", line 83: expected statement.
+    config.end_splash_transition = Dissolve(0.8)
+                                 ^
 
 Ren'Py Version: Ren'Py 6.99.12.2.2029

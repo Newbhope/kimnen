@@ -1,14 +1,14 @@
 label chapter1:
-    scene black with dissolve
-    "August 6, 2016"
 
     scene apartment with dissolve
 
     m "Everyone got everything packed? You guys better use the bathroom too, or I’m going to kick you out of the car."
     patrick "Yup. Did all of that."
-    danM "Yeah, let’s go"
-    m "Alright. Lemme call my parents to tell them I’m on the way back."
-    "I do this every long car ride because of my parents. They always seemed to worry a bit too much."
+    danM "Yeah, let’s go."
+    m "Alright. Let me call my parents to tell them I’m on the way back."
+    "I do this every long car ride because my parents seem to worry a bit much."
+
+    #TODO: dial ring tone and pause dialogue
     m "Hi Mommy. I’m leaving now."
     mom "Good. What time will you be back?"
     m "Um, I think around 8. I need to drop off two friends first."
@@ -16,6 +16,7 @@ label chapter1:
     m "Yup, bye Mommy."
     mom "Bye!"
     #play sound "hang_up.mp3"
+
     m "Alright. Let’s load the car and head out."
     scene car uofi with wipeleft
     "Just like the other times I’ve driven back to the Chicago suburbs, I play through video game soundtracks while talking about random things with my friends."
@@ -23,14 +24,24 @@ label chapter1:
     ""
     scene car midway2 with dissolve
     "Corn fields slowly transform into buildings and highway lanes as we get closer to the city."
+    scene patrick_house with dissolve
+    m "See you on campus in two weeks."
+    patrick "Yeah. Thanks for the ride!"
+
     scene car midway3 with dissolve
-    "I drop off Patrick and then Dan. Finally, it was time to head back to my house."
-    scene car suburbs with dissolve
+    ""
+    scene dan_house with wiperight
+    danM "Thanks for the ride."
+    m "No problem. Venmo me whenever."
+    danM "Sure. I can just do it when you drive me back to campus."
+    m "Aight. See ya."
+    scene car_suburb_night with wiperight
     ""
 
     scene front door night with dissolve
-    "I get into the driveway, ring the doorbell, and bring most of my bags to the front door. My dad answers the door."
-    dad "Hi Johnny. Is that all of the bags?"
+    play music "music/Home.mp3"
+    "I get into the driveway and ring the doorbell. My dad answers the door."
+    dad "Hi Johnny. Is that all of your bags?"
     m "I think I have one more. Let me get it from the car."
     scene dining room night with dissolve
     "I get my last backpack and head into the house. I see my mom to the left in the kitchen."
@@ -41,9 +52,10 @@ label chapter1:
     m "Alright, thanks."
     #some transition going up stairs and noises
     scene my room house night with dissolve
-    "I head up to my room and leave my stuff on the floor. The only thing I unpack is my laptop."
+    "I head up to my room and leave my stuff on the floor. I unpack my laptop first thing."
     mom "Johnny! Dinner’s ready!"
     m "Ok!"
+    #some transition going down stairs and noises
     scene dining room table with dissolve
     "I head down and help set up the table. The three of us sit around the end of it. My brother and sister moved out awhile ago, so it’s rarely full."
     m "What did you make Mommy?"
@@ -68,7 +80,7 @@ label chapter1:
     m "Alright. Should I put my dishes in the sink?"
     mom "Yeah. Don't forget to rinse them too."
     m "Ok."
-    scene kitchen
+    scene kitchen with dissolve
     #play dish Sounds
     m "Thanks for dinner Mommy!"
     mom "No problem. Johnny do you want tea?"
@@ -87,18 +99,18 @@ label chapter1:
     will "Hi!"
     m "Yo guys."
 
-    scene laptop dota
+    scene laptop dota with dissolve
     "We launch Dota 2 and queue up for a game. Just when it's about to start..."
     mom "Johnny! Tea is ready!"
     m "Ok! Coming! One sec guys."
     #stair noises
-    scene stairs
+    scene stairs with dissolve
     m "Thanks mommy!"
     mom "Careful, it's hot."
     m "Ok."
     #not as quick stair noises
     scene my room house night with dissolve
-    scene laptop
+    scene laptop with dissolve
     m "Alright I’m back. Everyone ready?"
     #transition
     #noises of battle
@@ -110,13 +122,14 @@ label chapter1:
     patrick "Night."
     #discord hange up noises
     scene my room house night with dissolve
+    ""
     #light switch noise
     scene black with dissolve
-    scene my room house night with dissolve
+    scene my room house with dissolve
     "August 9, Tuesday"
     dad "Hey Johnny. Can you help me get groceries from Costco?"
     m "Sure. Let me change."
-    scene costco
+    scene costco with dissolve
     dad "Has your mom mentioned anything about her stomach pains to you?"
     m "No? I don't think so."
     dad "I've been trying to tell her to go to the doctor, but she won't listen. Can you convince her to go with you?"
@@ -135,12 +148,12 @@ label chapter1:
     ""
     scene my room house day with dissolve
     m "Guess I should talk to mommy about the doctor's."
-    scene main stairs
+    scene main stairs with dissolve
     ""
-    scene basement stairs
+    scene basement stairs with dissolve
     ""
     scene basement with wipeleft
-    "This is where my mom does her job of making hair bows from ribbons."
+    "This is where my mom does her job of making decorative bows from ribbons."
     m "Hi Mommy."
     "I lean in to kiss her on the cheek."
     mom "Hi Johnny. What's up?"
@@ -176,10 +189,10 @@ label chapter1:
     m "You always take forever. The train is coming in like 30 minutes!"
     dad "Johnny! Is your mom ready yet?!"
     m "Almost!"
-    scene front door day
+    scene front door day with dissolve
     ""
     #play car noises
-    scene train station
+    scene train station with dissolve
     "We somehow make it to the train station on time. My dad drops us off and we wave goodbye."
     #play noise
     #scene transition
@@ -189,7 +202,7 @@ label chapter1:
     m "Fine."
     "My mom smiles happily as we head to the street. Lisa and Dan pick us up, and we head to the restaurant."
     #some scene transition
-    scene restaurant
+    scene roister entrance with dissolve
     lisa "We ordered a lot so dig in!"
     m "Thanks!"
     "Dinner proceeds blissfully as multiple great dishes come in one after the other. We head back to my sister’s apartment afterwards."
@@ -236,12 +249,12 @@ label chapter1:
     dad "Johnny! Did you pack everything yet?"
     m "Almost! I’ll bring everything down after I shower!"
     "After getting ready, I head downstairs to eat a quick lunch."
-    scene dining room day
+    scene dining room day with dissolve
     mom "Johnny, can you grill the food I marinated for you? I’m too tired right now."
     "My mom always makes food for me to bring back to school. Helps a lot when I have to return to an empty fridge."
     m "Sure. Are you ok?"
     mom "Yeah. I’ll be downstairs making bows. Tell me if you need help."
-    scene backyard
+    scene backyard with dissolve
     "I eat lunch while grilling the chicken and ribs. I stop by the basement to check on my mom and to ask for help."
     #TODO: feels slightly awkward here?
     #TODO: maybe short downstairs scene back up to backyard

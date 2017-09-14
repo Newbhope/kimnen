@@ -43,24 +43,21 @@ label start:
 
     pm "This... is a hard story to tell."
 
-    pm "Thinking of {b}her{/b} floods me with emotions and memories. It makes me sad just looking back at old times."
+    pm "Thinking of {color=#cc0066}{b}her{/b}{/color} floods me with emotions and memories. It makes me sad just remembering old times."
     pm "I can’t talk to her, live with her, or embrace her anymore."
     pm "All I have left is memories in my head, pictures, and a few old videos."
     pm "They aren’t even close to the real thing though. They don’t show just how amazing, how caring she was."
-    pm "This is my best attempt at recollecting what happened during the summer and fall of 2016. The year my mom, Kim Nen Thi Bui, passed away."
-
-    scene main quad with dissolve
-    #TODO: get picture with leaves on trees
-    "August 6, Tuesday"
+    pm "This story is my best attempt at recollecting the time before my mom, Kim Nen Thi Bui, passed away."
 
     scene main quad gray with dissolve
-    pm "Before that though, some background on me and my family."
+    play music "music/everyday1.mp3"
     pm "At the time, I was an incoming junior studying computer science at the University of Illinois Urbana Champaign. I lived on campus for the summer working as an intern."
-    #pm "My family situation was fine from what I could tell. I called back home once in awhile to talk with my parents and talked with my older brother and sister on occasion."
     pm "My parents were immigrants from Vietnam. They fled the country after the war ended due to the oppression of the new government. They had me pretty late though, so I’m far removed from all of that."
-    pm "Both of my siblings are a good deal older because of that. I just attended my brother’s wedding a month prior."
+    pm "Both of my siblings are a good deal older because of that. So much older that had I just attended my brother’s wedding a month prior."
     pm "My dad’s english was pretty good, but my mom spoke to me in broken English interspersed with Vietnamese. It felt pretty natural to me though since I grew up with it."
     pm "The end of summer was approaching, and I was getting ready to drive back to the suburbs of Chicago with my roommate and a friend."
 
-
+    scene main quad with dissolve
+    "August 6, 2016"
+    
     jump chapter1
