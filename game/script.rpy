@@ -15,7 +15,7 @@ define sarah = Character("Sarah", who_color = "#c13007")
 define will = Character("Will", who_color = "#02703c")
 define jon = Character("Jon", who_color = "#060044")
 define brendan = Character("Brendan", who_color = "#0f8c5e")
-define patrick = Character("Patrick", who_color = "#1411b2")
+define patrick = Character("Patrick", who_color = "#003099")
 define ambika = Character("Ambika", who_color = "#8918ba")
 define danM = Character ("Dan M", who_color = "#3f7f11")
 
@@ -39,7 +39,7 @@ label start:
     scene black
     pause 1.0
 
-    # jump in_progress
+    jump in_progress
 
     pm "This... is a hard story to tell."
 
@@ -59,5 +59,5 @@ label start:
 
     scene main quad with dissolve
     "August 6, 2016"
-    
+
     jump chapter1

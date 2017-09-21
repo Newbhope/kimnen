@@ -21,12 +21,12 @@ label chapter1:
     scene car uofi with wipeleft
     "Just like the other times I’ve driven back to the Chicago suburbs, I play through video game soundtracks while talking about random things with my friends."
     scene car midway1 with dissolve
-    ""
+    pause 1.5
     scene car midway2 with dissolve
     "Corn fields slowly transform into buildings and highway lanes as we get closer to the city."
     scene patrick_house with dissolve
-    m "See you on campus in two weeks."
-    patrick "Yeah. Thanks for the ride!"
+    m "See you on campus in two weeks!"
+    patrick "Yeah. Thanks for the ride."
 
     scene car midway3 with dissolve
     ""
@@ -35,11 +35,13 @@ label chapter1:
     m "No problem. Venmo me whenever."
     danM "Sure. I can just do it when you drive me back to campus."
     m "Aight. See ya."
-    scene car_suburb_night with wiperight
-    ""
 
+    scene car_suburb_night with wiperight
+    stop music fadeout 1.0
+    pause 1.0
     scene front door night with dissolve
     play music "music/Home.mp3"
+    #TODO too much time for one song
     "I get into the driveway and ring the doorbell. My dad answers the door."
     dad "Hi Johnny. Is that all of your bags?"
     m "I think I have one more. Let me get it from the car."
@@ -61,21 +63,21 @@ label chapter1:
     m "What did you make Mommy?"
     mom "Bánh hỏi with pork."
     m "Yay!"
-    "One of my favorite Vietnamese dishes. I didn’t eat any Vietnamese food while at school due to my laziness and the difficulty of making it."
+    show banh_hoi at center_above with dissolve
+    "One of my favorite Vietnamese dishes. I didn’t eat any Vietnamese food while at school due to laziness and difficulty."
     dad "Johnny, can you get me a cup of tea too?"
     m "Sure."
     #TODO: some sort of dish noises?
-
+    hide banh_hoi with dissolve
     "The meal passes by with idle chatter and the TV playing in the background. I happily finish my plate and cup of milk. The conversation shifts to my summer internship."
     m "Oh yeah. Here’s pictures of my trip to the John Deere headquarters."
-    #blur background, remove phone screen
     show johndeere1 at center_above with dissolve
     mom "Wow! The building looks so pretty. "
     m "Yeah. It was pretty interesting how much nature they had inside the offices."
     hide johndeere1
     show johndeere2 at center_above with dissolve
     mom "Wow!"
-    hide johndeere2
+    hide johndeere2 with dissolve
 
     m "Alright. Should I put my dishes in the sink?"
     mom "Yeah. Don't forget to rinse them too."
@@ -90,8 +92,6 @@ label chapter1:
     "I kiss her quickly on the cheek and head upstairs. My dad heads to his usual recliner."
     scene my room house night with dissolve
     "I launch my usual websites and the group chat I have with my friends."
-    scene patrick dm with dissolve
-    #play sound
     "Video games are a major time sink for my friend group. Dota is the current game we've been playing together."
     "After a few moments, we start up a voice call."
     #play voice join sound 3 times
@@ -99,34 +99,47 @@ label chapter1:
     will "Hi!"
     m "Yo guys."
 
-    scene laptop dota with dissolve
+    scene dota_start with dissolve
     "We launch Dota 2 and queue up for a game. Just when it's about to start..."
+    scene my room house night with vpunch
     mom "Johnny! Tea is ready!"
     m "Ok! Coming! One sec guys."
     #stair noises
-    scene stairs with dissolve
+    scene second_floor with wipeleft
+    pause 0.25
+    scene main_stairs_down with dissolve
     m "Thanks mommy!"
     mom "Careful, it's hot."
-    m "Ok."
+    m "Ok!"
     #not as quick stair noises
-    scene my room house night with dissolve
-    scene laptop with dissolve
+    scene my room house night with wiperight
+    pause 0.1
+    scene dota_start with dissolve
     m "Alright I’m back. Everyone ready?"
+    will "Yup."
+
+    scene black with dissolve
+    pause 0.5
     #transition
     #noises of battle
-    m "Good game of dota guys."
+    scene dota_end with dissolve
+    m "Good game of Dota guys."
     patrick "It was easyyy."
     "Kevin" "Easyyyy."
     m "I'm gonna go to sleep now. Night guys."
     will "Good night."
     patrick "Night."
-    #discord hange up noises
+    #discord hang up noises
+    #
     scene my room house night with dissolve
-    ""
+    pause 1
     #light switch noise
     scene black with dissolve
-    scene my room house with dissolve
     "August 9, Tuesday"
+
+    #Maybe new song here
+
+    scene my room house with dissolve
     dad "Hey Johnny. Can you help me get groceries from Costco?"
     m "Sure. Let me change."
     scene costco with dissolve
@@ -141,12 +154,9 @@ label chapter1:
     dad "Oh yeah. I need your help with putting up curtains and cutting the grass."
     m "Ok."
     mt "Ugh this is such a pain. I wanted to work on my bus app too…"
-    scene my room house day blurred with dissolve
-    "I like confiding in my sister with family matters."
-    #text noises
-    show 8-9 at center_above with dissolve
-    ""
-    scene my room house day with dissolve
+
+
+    scene my room house day with blinds
     m "Guess I should talk to mommy about the doctor's."
     scene main stairs with dissolve
     ""
@@ -169,10 +179,15 @@ label chapter1:
     m "I think I'll try to schedule it next week."
     mom "Ok. Make sure I'm with the woman doctor."
     m "Ok."
+
     scene my room house day with dissolve
     #phone noises
     "I schedule the doctor's appointment and put it in my calendar"
     scene my room house day blurred with dissolve
+    "I like confiding in my sister with family matters."
+    #text noises
+    show 8-9 at center_above with dissolve
+    ""
     show august calendar at truecenter with dissolve
     ""
     mt "Oh yeah. Mommy and I are going to visit Lisa in Chicago this weekend."
@@ -264,7 +279,6 @@ label chapter1:
     dad "Is that everything?"
     m "Let me do a last check of my room."
     dad "Sure. Say bye to your mom too."
-label in_progress:
     scene my room house with dissolve
     mt "Hm. Don't think I forgot anything. I'll be back soon anyways."
     scene inside front door with dissolve
@@ -280,6 +294,7 @@ label in_progress:
     m "Bye Daddy. See you in two weeks!"
     "As I’m about to start driving, my mom waves goodbye from the doorway. I wave goodbye to my parents then head off to my friends' houses."
     scene black with dissolve
+    stop music fadeout 1.0
     pm "Unbeknownst to me at the time, that would be the last I’d see my mom in a healthy state."
 
     #Around 10-12 minutes or reading so far

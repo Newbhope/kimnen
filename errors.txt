@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/options.rpy", line 83: expected statement.
-    config.end_splash_transition = Dissolve(0.8)
-                                 ^
+File "game/chapter1.rpy", line 42: expected end of line
+    stop music fade 1.0
+               ^
 
-Ren'Py Version: Ren'Py 6.99.12.2.2029
+Ren'Py Version: Ren'Py 6.99.12.4.2187

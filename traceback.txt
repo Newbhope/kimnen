@@ -1,46 +1,20 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 57, in script
-    pm "At the time, I was an incoming junior studying computer science at the University of Illinois Urbana Champaign. I lived on campus for the summer working as an intern."
-  File "renpy/common/000window.rpy", line 98, in _window_auto_callback
-    _window_show()
-  File "renpy/common/000window.rpy", line 60, in _window_show
-    renpy.with_statement(trans)
-IOError: Couldn't find file 'everyday1.mp3'.
+  File "game/script.rpy", line 42, in script
+    jump in_progress
+ScriptError: could not find label 'in_progress'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 57, in script
-    pm "At the time, I was an incoming junior studying computer science at the University of Illinois Urbana Champaign. I lived on campus for the summer working as an intern."
-  File "C:\Users\newho\Desktop\Kim Nen\renpy-6.99.12.1-sdk\renpy\ast.py", line 587, in execute
-    statement_name("say")
-  File "C:\Users\newho\Desktop\Kim Nen\renpy-6.99.12.1-sdk\renpy\ast.py", line 43, in statement_name
-    i(name)
-  File "renpy/common/000window.rpy", line 98, in _window_auto_callback
-    _window_show()
-  File "renpy/common/000window.rpy", line 60, in _window_show
-    renpy.with_statement(trans)
-  File "C:\Users\newho\Desktop\Kim Nen\renpy-6.99.12.1-sdk\renpy\exports.py", line 1381, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "C:\Users\newho\Desktop\Kim Nen\renpy-6.99.12.1-sdk\renpy\display\core.py", line 2096, in do_with
-    clear=clear)
-  File "C:\Users\newho\Desktop\Kim Nen\renpy-6.99.12.1-sdk\renpy\display\core.py", line 2526, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
-  File "C:\Users\newho\Desktop\Kim Nen\renpy-6.99.12.1-sdk\renpy\display\core.py", line 2825, in interact_core
-    renpy.audio.audio.interact()
-  File "C:\Users\newho\Desktop\Kim Nen\renpy-6.99.12.1-sdk\renpy\audio\audio.py", line 930, in interact
-    periodic()
-  File "C:\Users\newho\Desktop\Kim Nen\renpy-6.99.12.1-sdk\renpy\audio\audio.py", line 864, in periodic
-    c.periodic()
-  File "C:\Users\newho\Desktop\Kim Nen\renpy-6.99.12.1-sdk\renpy\audio\audio.py", line 403, in periodic
-    topf = load(self.file_prefix + filename + self.file_suffix)
-  File "C:\Users\newho\Desktop\Kim Nen\renpy-6.99.12.1-sdk\renpy\audio\audio.py", line 67, in load
-    rv = renpy.loader.load(fn)
-  File "C:\Users\newho\Desktop\Kim Nen\renpy-6.99.12.1-sdk\renpy\loader.py", line 543, in load
-    raise IOError("Couldn't find file '%s'." % name)
-IOError: Couldn't find file 'everyday1.mp3'.
+  File "game/script.rpy", line 42, in script
+    jump in_progress
+  File "C:\Users\newho\Desktop\Kim Nen\renpy-6.99.12.1-sdk\renpy\ast.py", line 1527, in execute
+    rv = renpy.game.script.lookup(target)
+  File "C:\Users\newho\Desktop\Kim Nen\renpy-6.99.12.1-sdk\renpy\script.py", line 858, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'in_progress'.
 
 Windows-8-6.2.9200
 Ren'Py 6.99.12.4.2187
