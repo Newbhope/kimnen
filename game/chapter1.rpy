@@ -8,14 +8,17 @@ label chapter1:
     m "Alright. Let me call my parents to tell them I’m on the way back."
     "I do this every long car ride because my parents seem to worry a bit much."
 
-    #TODO: dial ring tone and pause dialogue
+    play sound "sfx/dial_tone.mp3"
+    pause 2.3
+    mom "Hi Johnny."
     m "Hi Mommy. I’m leaving now."
     mom "Good. What time will you be back?"
-    m "Um, I think around 8. I need to drop off two friends first."
+    m "Um, I think around eight. I need to drop off two friends first."
     mom "Ok. Drive back safe!"
     m "Yup, bye Mommy."
     mom "Bye!"
-    #play sound "hang_up.mp3"
+    play sound "sfx/hangup.mp3"
+    pause 0.5
 
     m "Alright. Let’s load the car and head out."
     scene car uofi with wipeleft
@@ -29,7 +32,7 @@ label chapter1:
     patrick "Yeah. Thanks for the ride."
 
     scene car midway3 with dissolve
-    ""
+    pause 1.5
     scene dan_house with wiperight
     danM "Thanks for the ride."
     m "No problem. Venmo me whenever."
@@ -41,23 +44,28 @@ label chapter1:
     pause 1.0
     scene front door night with dissolve
     play music "music/Home.mp3"
-    #TODO too much time for one song
+    #TODO too much time for one song?
     "I get into the driveway and ring the doorbell. My dad answers the door."
     dad "Hi Johnny. Is that all of your bags?"
     m "I think I have one more. Let me get it from the car."
-    scene dining room night with dissolve
+    scene dining room night with irisout
     "I get my last backpack and head into the house. I see my mom to the left in the kitchen."
     mom "Hi Johnny! I’ve missed you!"
     "We both hug and kiss each other on the cheek."
     m "Hi Mommy. I’m pretty tired, so I’m going to bring my bags up to my room and rest for a bit."
     mom "Ok, dinner will be ready soon!"
     m "Alright, thanks."
-    #some transition going up stairs and noises
+    scene main_stairs_up with dissolve
+    play sound "sfx/stair_up.mp3"
+    pause 1.4
     scene my room house night with dissolve
     "I head up to my room and leave my stuff on the floor. I unpack my laptop first thing."
     mom "Johnny! Dinner’s ready!"
     m "Ok!"
-    #some transition going down stairs and noises
+    scene main_stairs_down with wipeleft
+    play sound "sfx/stair_down.mp3"
+    pause 1.4
+
     scene dining room table with dissolve
     "I head down and help set up the table. The three of us sit around the end of it. My brother and sister moved out awhile ago, so it’s rarely full."
     m "What did you make Mommy?"
@@ -65,10 +73,9 @@ label chapter1:
     m "Yay!"
     show banh_hoi at center_above with dissolve
     "One of my favorite Vietnamese dishes. I didn’t eat any Vietnamese food while at school due to laziness and difficulty."
+    hide banh_hoi with dissolve
     dad "Johnny, can you get me a cup of tea too?"
     m "Sure."
-    #TODO: some sort of dish noises?
-    hide banh_hoi with dissolve
     "The meal passes by with idle chatter and the TV playing in the background. I happily finish my plate and cup of milk. The conversation shifts to my summer internship."
     m "Oh yeah. Here’s pictures of my trip to the John Deere headquarters."
     show johndeere1 at center_above with dissolve
@@ -78,40 +85,44 @@ label chapter1:
     show johndeere2 at center_above with dissolve
     mom "Wow!"
     hide johndeere2 with dissolve
-
     m "Alright. Should I put my dishes in the sink?"
     mom "Yeah. Don't forget to rinse them too."
     m "Ok."
     scene kitchen with dissolve
-    #play dish Sounds
+    play sound "sfx/faucet.mp3"
+    pause 1.8
     m "Thanks for dinner Mommy!"
     mom "No problem. Johnny do you want tea?"
     m "Sure!"
     "Tea from home is always the best. My mom usually makes jasmine tea after dinner."
     mom "Ok. I'll tell you to come down when it's ready."
-    "I kiss her quickly on the cheek and head upstairs. My dad heads to his usual recliner."
+    "I kiss her quickly on the cheek and head upstairs. My dad goes to his usual recliner."
+    scene main_stairs_up with dissolve
+    play sound "sfx/stair_up.mp3"
+    pause 1.4
+
     scene my room house night with dissolve
     "I launch my usual websites and the group chat I have with my friends."
     "Video games are a major time sink for my friend group. Dota is the current game we've been playing together."
     "After a few moments, we start up a voice call."
-    #play voice join sound 3 times
+    play sound "sfx/discord_user_join.mp3"
+    pause 0.3
     "Kevin" "Hi!"
     will "Hi!"
     m "Yo guys."
-
     scene dota_start with dissolve
     "We launch Dota 2 and queue up for a game. Just when it's about to start..."
     scene my room house night with vpunch
     mom "Johnny! Tea is ready!"
     m "Ok! Coming! One sec guys."
-    #stair noises
     scene second_floor with wipeleft
+    play sound "sfx/stair_down.mp3"
     pause 0.25
     scene main_stairs_down with dissolve
     m "Thanks mommy!"
     mom "Careful, it's hot."
     m "Ok!"
-    #not as quick stair noises
+    play sound "sfx/stair_up.mp3"
     scene my room house night with wiperight
     pause 0.1
     scene dota_start with dissolve
@@ -119,27 +130,25 @@ label chapter1:
     will "Yup."
 
     scene black with dissolve
-    pause 0.5
-    #transition
-    #noises of battle
+    play sound "sfx/dota.mp3"
+    "A fierce battle rages on as both of our teams fight in a virtual arena. Eventually..."
     scene dota_end with dissolve
-    m "Good game of Dota guys."
+    m "Good game of Dota guys!"
     patrick "It was easyyy."
     "Kevin" "Easyyyy."
     m "I'm gonna go to sleep now. Night guys."
     will "Good night."
     patrick "Night."
-    #discord hang up noises
-    #
+    play sound "sfx/discord_user_leave.mp3"
     scene my room house night with dissolve
     pause 1
-    #light switch noise
+    play sound "sfx/lightswitch.mp3"
     scene black with dissolve
-    "August 9, Tuesday"
-
+    pause 2
     #Maybe new song here
 
     scene my room house with dissolve
+    "August 9, Tuesday"
     dad "Hey Johnny. Can you help me get groceries from Costco?"
     m "Sure. Let me change."
     scene costco with dissolve
@@ -155,13 +164,14 @@ label chapter1:
     m "Ok."
     mt "Ugh this is such a pain. I wanted to work on my bus app too…"
 
-
     scene my room house day with blinds
     m "Guess I should talk to mommy about the doctor's."
-    scene main stairs with dissolve
-    ""
-    scene basement stairs with dissolve
-    ""
+    scene main_stairs_down with dissolve
+    play sound "sfx/stair_down.mp3"
+    pause 1.4
+    scene basement_stairs with dissolve
+    play sound "sfx/basement_down.mp3"
+    pause 1.4
     scene basement with wipeleft
     "This is where my mom does her job of making decorative bows from ribbons."
     m "Hi Mommy."
@@ -170,7 +180,7 @@ label chapter1:
     m "Daddy told me you have some stomach pains?"
     mom "Yeah. It's not too bad though. It just hurts when I eat too much."
     m "Do you know why it hurts?"
-    mom "No. It just hurts for a bit here after eating too much."
+    mom "No. It just hurts for a bit here after eating."
     "She points to her mid lower abdomen."
     m "Yeah. I don't think that's normal. Why didn't you go to the doctor's yet?"
     mom "I planned on going sometime in September. I’m too busy right now."
@@ -181,72 +191,90 @@ label chapter1:
     m "Ok."
 
     scene my room house day with dissolve
-    #phone noises
-    "I schedule the doctor's appointment and put it in my calendar"
-    scene my room house day blurred with dissolve
-    "I like confiding in my sister with family matters."
-    #text noises
-    show 8-9 at center_above with dissolve
-    ""
+    "I schedule the doctor's appointment and put it in my calendar."
     show august calendar at truecenter with dissolve
-    ""
     mt "Oh yeah. Mommy and I are going to visit Lisa in Chicago this weekend."
     "My sister lives in the Windy City with her fiance, Dan."
     mt "Should be a good time."
-    #play lightswitch
-
+    hide august calendar with dissolve
+    mt "That reminds me..."
+    "I like to complain to my sister about random family matters."
+    play sound "sfx/text.mp3"
+    m "Got I hate being home"
+    play sound "sfx/text_short.mp3"
+    m "God*"
+    play sound "sfx/message.mp3"
+    pause 0.5
+    lisa "Ha Why"
+    play sound "sfx/text_long.mp3"
+    m "Have to help do housework constantly. Mommy has stomach pain, and I had to convince her to go to the doctor with me."
+    play sound "sfx/message.mp3"
+    pause 0.5
+    lisa "Yeah I told her she needed to go"
+    mt "Well that's enough complaining. Time to help Daddy I guess."
+    "The day passes uneventfully as I help do chores."
     scene black with dissolve
-    "August 12, Friday"
-    #Different image?
+    play sound "sfx/lightswitch.mp3"
+    pause 2
+
     scene my room house with dissolve
+    "August 12, Friday"
     m "Are you ready yet Mommy?"
     mom "Yeah. Five more minutes."
     m "You always take forever. The train is coming in like 30 minutes!"
     dad "Johnny! Is your mom ready yet?!"
     m "Almost!"
-    scene front door day with dissolve
-    ""
-    #play car noises
-    scene train station with dissolve
+    scene front_door_day with dissolve
+    play sound "sfx/car_door1.mp3"
+    pause 1.7
+    scene train_station with dissolve
     "We somehow make it to the train station on time. My dad drops us off and we wave goodbye."
-    #play noise
-    #scene transition
     scene chicago with dissolve
-    m "Finally. Let's go mommy."
+    "After an hour long train ride, we arrive at Ogilvie Station."
+    m "Finally. Let's go Mommy."
     mom "Ok. Make sure you hold my hand."
     m "Fine."
     "My mom smiles happily as we head to the street. Lisa and Dan pick us up, and we head to the restaurant."
-    #some scene transition
     scene roister entrance with dissolve
     lisa "We ordered a lot so dig in!"
     m "Thanks!"
-    "Dinner proceeds blissfully as multiple great dishes come in one after the other. We head back to my sister’s apartment afterwards."
-    #TODO: food images? more description?
-    #some scene transition
+    "Dinner proceeds blissfully as multiple great dishes come one after the other."
+    show roister1 at center_above with dissolve
+    ""
+    hide roister1
+    show roister2 at center_above with dissolve
+    ""
+    hide roister2
+    show roister3 at center_above with dissolve
+    ""
+    hide roister3 with dissolve
+    "We head back to my sister’s apartment afterwards."
     scene lisa condo with dissolve
     lisa "Do you guys want to see a movie? There isn’t too much else to do right now."
     m "Sure. Mommy?"
     mom "I’m ok. I’m a little tired so I’ll just lie down here. Have fun though."
     m "Ok. You guys ready then?"
     dan "Yeah."
-    #play door noise
     scene lisa hallway with wiperight
     lisa "Do you think mommy will be okay?"
     m "Think so. She usually has stomach issues after eating. I scheduled a doctor’s appointment with her for Tuesday."
     lisa "That’s good. Hopefully it’s nothing too serious."
     scene black wtih dissolve
-    #play lightswitch
-    "August 16, Tuesday"
+    pause 0.3
+    play sound "sfx/lightswitch.mp3"
+    pause 2
+
     scene my room house day with dissolve
+    "August 16, Tuesday"
     m "Mommy! Are you ready yet!"
-    mom "Yeah! Just wait a little bit longer!"
-    scene front door day with dissolve
-    ""
-    #travel transition
+    mom "Yeah! Just a little bit longer!"
+    scene front_door_day with dissolve
+    play sound "sfx/car_door1.mp3"
+    pause 1.7
     scene doctors with fade
     "My physical proceeds normally. Pretty much nothing has changed from last year."
     "After I get back to the waiting room, my mom is called in to see the same doctor."
-    #time wipe transition
+    scene black with dissolve
     scene doctors with fade
     "My mom finally returns to the waiting room."
     m "What did the doctor say?"
@@ -256,47 +284,65 @@ label chapter1:
     m "Sure."
 
     scene black with dissolve
-    "A few days pass as we wait for the phone call to approve the CT scan. My dad worries over every ring of the home phone. I brush it all off and spend time coding and playing with friends."
+    "A few days pass as we wait for the phone call to approve the CT scan. My dad worries over every ring of the home phone."
+    "I brush it all off and spend time coding and playing with friends."
     "Before I know it, it’s time to head back to school."
-    #play light noise
-    "August 21, Sunday"
+
     scene my room house day with dissolve
+    "August 21, Sunday"
     dad "Johnny! Did you pack everything yet?"
     m "Almost! I’ll bring everything down after I shower!"
     "After getting ready, I head downstairs to eat a quick lunch."
+    scene main_stairs_down with wipeleft
+    play sound "sfx/stair_down.mp3"
+    pause 1.4
     scene dining room day with dissolve
     mom "Johnny, can you grill the food I marinated for you? I’m too tired right now."
     "My mom always makes food for me to bring back to school. Helps a lot when I have to return to an empty fridge."
     m "Sure. Are you ok?"
     mom "Yeah. I’ll be downstairs making bows. Tell me if you need help."
-    scene backyard with dissolve
-    "I eat lunch while grilling the chicken and ribs. I stop by the basement to check on my mom and to ask for help."
-    #TODO: feels slightly awkward here?
-    #TODO: maybe short downstairs scene back up to backyard
-    #time pass
-    scene front door day
+    scene backyard with wipeleft
+    "I eat lunch while grilling the chicken and ribs."
+    mt "I wonder how much longer this is going to take..."
+    scene basement_stairs with dissolve
+    play sound "sfx/basement_down.mp3"
+    pause 1.4
+    scene basement with wipeleft
+    m "Hi Mommy. The chicken has been cooking for 45 minutes. How much longer should I grill it?"
+    mom "What temperature is it at?"
+    m "400."
+    mom "It should be ok in 20 more minutes."
+    m "Alright."
+    scene backyard with wiperight
+    "I finish grilling the food and head inside to bag it."
+    scene dining room day with dissolve
+    mt "Alright time to put everything in the car."
+    scene front_door_day with dissolve
+    play sound "sfx/car_door1.mp3"
     "I pack the food and the rest of my stuff in my car."
     dad "Is that everything?"
     m "Let me do a last check of my room."
     dad "Sure. Say bye to your mom too."
     scene my room house with dissolve
     mt "Hm. Don't think I forgot anything. I'll be back soon anyways."
-    scene inside front door with dissolve
-    "My mom comes up from the basement to say goodbye."
+    scene doorway with dissolve
+    "Just as I come downstairs, my mom comes up from the basement to say goodbye."
     mom "Bye Johnny. I’ll miss you!"
     "We hug and kiss each other on the cheeks."
     m "Yup. I’ll be back in two weeks so don’t worry too much. "
     mom "Do you have all the food packed?"
     m "Yeah. I think I have everything. Bye Mommy!"
-    scene front door day with dissolve
+    scene front_door_day with dissolve
     "I head out of the house to my car and message my friends that I’m heading out to pick them up."
     dad "The car should be ready. Bye Johnny."
     m "Bye Daddy. See you in two weeks!"
-    "As I’m about to start driving, my mom waves goodbye from the doorway. I wave goodbye to my parents then head off to my friends' houses."
+    "As I’m about to start driving, my mom waves goodbye from the doorway."
+    "I wave goodbye to my parents then head off to my friends' houses."
     scene black with dissolve
     stop music fadeout 1.0
     pm "Unbeknownst to me at the time, that would be the last I’d see my mom in a healthy state."
 
+    pause 1.0
     #Around 10-12 minutes or reading so far
 
     jump chapter2

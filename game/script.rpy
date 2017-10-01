@@ -15,9 +15,10 @@ define sarah = Character("Sarah", who_color = "#c13007")
 define will = Character("Will", who_color = "#02703c")
 define jon = Character("Jon", who_color = "#060044")
 define brendan = Character("Brendan", who_color = "#0f8c5e")
-define patrick = Character("Patrick", who_color = "#003099")
+define patrick = Character("Patrick", who_color = "#140092")
 define ambika = Character("Ambika", who_color = "#8918ba")
 define danM = Character ("Dan M", who_color = "#3f7f11")
+
 
 image black = "#000000"
 
@@ -27,11 +28,9 @@ transform center_above:
 
 
 label splashscreen:
-    # define fadehold = Fade(1.0, 2.0, 1.0)
 
     scene black with pixellate
     pause 0.5
-    # $ renpy.transition(fadehold)
     return
 
 label start:

@@ -123,10 +123,13 @@ default preferences.text_cps = 0
 
 default preferences.afm_time = 15
 
+# default preferences.skip = "all"
+
 ## MY CONFIGS
 
-define config.rollback_enabled = False
+# define config.rollback_enabled = False
 define config.allow_skipping = True
+define config.skip_indicator = True
 # define config.tts_voice = "no"
 
 ## END MY CONFIGS
