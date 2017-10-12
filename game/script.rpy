@@ -13,12 +13,16 @@ define dan = Character("Dan N", who_color = "#b5051f")
 define sarah = Character("Sarah", who_color = "#c13007")
 
 define will = Character("Will", who_color = "#02703c")
-define jon = Character("Jon", who_color = "#060044")
+define jon = Character("Jon", who_color = "#3c9fd1")
 define brendan = Character("Brendan", who_color = "#0f8c5e")
 define patrick = Character("Patrick", who_color = "#140092")
 define ambika = Character("Ambika", who_color = "#8918ba")
 define danM = Character ("Dan M", who_color = "#3f7f11")
+define kevin = Character ("Kevin", who_color = "d15629")
+define tad = Character ("Tad", who_color = "#ea3535")
+define joe = Character ("Joe", who_color = "#e5ad34")
 
+define speaker = Character ("Commencement Speaker", who_color = "#E84A27")
 
 image black = "#000000"
 
@@ -26,6 +30,9 @@ transform center_above:
     xalign 0.5
     yalign 0.4
 
+transform center_above_03:
+    xalign 0.5
+    yalign 0.2
 
 label splashscreen:
 

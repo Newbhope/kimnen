@@ -43,8 +43,7 @@ label chapter1:
     stop music fadeout 1.0
     pause 1.0
     scene front door night with dissolve
-    play music "music/Home.mp3"
-    #TODO too much time for one song?
+    play music ["music/Home.mp3", "music/normal.mp3"] fadeout 1.5 fadein 1.5
     "I get into the driveway and ring the doorbell. My dad answers the door."
     dad "Hi Johnny. Is that all of your bags?"
     m "I think I have one more. Let me get it from the car."
@@ -107,7 +106,7 @@ label chapter1:
     "After a few moments, we start up a voice call."
     play sound "sfx/discord_user_join.mp3"
     pause 0.3
-    "Kevin" "Hi!"
+    kevin "Hi!"
     will "Hi!"
     m "Yo guys."
     scene dota_start with dissolve
@@ -135,7 +134,7 @@ label chapter1:
     scene dota_end with dissolve
     m "Good game of Dota guys!"
     patrick "It was easyyy."
-    "Kevin" "Easyyyy."
+    kevin "Easyyyy."
     m "I'm gonna go to sleep now. Night guys."
     will "Good night."
     patrick "Night."
@@ -205,7 +204,7 @@ label chapter1:
     m "God*"
     play sound "sfx/message.mp3"
     pause 0.5
-    lisa "Ha Why"
+    lisa "Ha why"
     play sound "sfx/text_long.mp3"
     m "Have to help do housework constantly. Mommy has stomach pain, and I had to convince her to go to the doctor with me."
     play sound "sfx/message.mp3"
