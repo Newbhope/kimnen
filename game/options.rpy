@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "1.0"
+define config.version = "0.0"
 
 
 ## Text that is placed on the game's about screen. To insert a blank line
@@ -125,11 +125,12 @@ default preferences.afm_time = 15
 
 # default preferences.skip = "all"
 
-## MY CONFIGS
+##################################################################################################### MY CONFIGS
 
 # define config.rollback_enabled = False
 define config.allow_skipping = True
 define config.skip_indicator = True
+define config.fade_music = 1.0
 # define config.tts_voice = "no"
 
 ## END MY CONFIGS

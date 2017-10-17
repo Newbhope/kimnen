@@ -188,6 +188,9 @@ label chapter1:
     m "I think I'll try to schedule it next week."
     mom "Ok. Make sure I'm with the woman doctor."
     m "Ok."
+    scene basement_stairs with wiperight
+    play sound "sfx/basement_up.mp3"
+    pause 1.4
 
     scene my room house day with dissolve
     "I schedule the doctor's appointment and put it in my calendar."
@@ -337,11 +340,12 @@ label chapter1:
     m "Bye Daddy. See you in two weeks!"
     "As I’m about to start driving, my mom waves goodbye from the doorway."
     "I wave goodbye to my parents then head off to my friends' houses."
-    scene black with dissolve
-    stop music fadeout 1.0
-    pm "Unbeknownst to me at the time, that would be the last I’d see my mom in a healthy state."
+    #
+    #scene black with dissolve
+    #stop music fadeout 1.0
+    #pm "Unbeknownst to me at the time, that would be the last I’d see my mom in a healthy state."
 
-    pause 1.0
+    #pause 1.0
     #Around 10-12 minutes or reading so far
 
     jump chapter2

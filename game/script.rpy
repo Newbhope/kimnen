@@ -23,6 +23,7 @@ define tad = Character ("Tad", who_color = "#ea3535")
 define joe = Character ("Joe", who_color = "#e5ad34")
 
 define speaker = Character ("Commencement Speaker", who_color = "#E84A27")
+define prof = Character ("Professor", who_color = "#13294b")
 
 image black = "#000000"
 
