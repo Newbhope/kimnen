@@ -107,8 +107,7 @@ label chapter2:
     play sound "sfx/lightswitch.mp3"
     pause 2
 
-    #
-    "Throughout the week, my dad texts me and close family status updates."
+    "Throughout the week, my dad texts updates to the whole family."
     "August 26, Friday"
     play sound "sfx/message.mp3"
     pause 0.2
@@ -312,7 +311,7 @@ label chapter2:
     play sound "sfx/stair_down.mp3"
     pause 1.4
     scene dining room table with dissolve
-    "The meal passes idly as I eat at the table by my self."
+    "The meal passes idly as I eat at the table by myself."
     scene house living night with dissolve
     "After cleaning up the dishes, I go to my mom's couch and sit next to her."
     "Small talk passes between the five of us as the TV plays in the background."

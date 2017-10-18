@@ -1,6 +1,5 @@
 label chapter3:
 
-label in_progress:
 
     #TODO: maybe new song
     play music "music/everyday1.mp3"
@@ -28,7 +27,7 @@ label in_progress:
     mt "Back to school..."
     play sound "sfx/message.mp3"
     pause 0.2
-    dad "Just FYI: This is our coming schedule: 1) Today: Nurse's phone interview required for Thursday's kidney surgery. 2) 10am Wed 9/7: PET scan (Positron Emission Tomography) at Lutheran General Hospital (LGH)."
+    dad "{font=Roboto-Regular.ttf}Just FYI: This is our coming schedule: 1) Today: Nurse's phone interview required for Thursday's kidney surgery. 2) 10am Wed 9/7: PET scan (Positron Emission Tomography) at Lutheran General Hospital (LGH).{/font}"
     dad "3) 9am Thu 9/8: Kidney surgery at LGH to insert a small stent into left kidney to fix the kidney's blockage problem. 4) 4pm Tue 9/13: Second opinion at University of Chicago Hospital."
     mt "More status updates... Hopefully Mommy will feel better after the surgery."
     scene way home with dissolve
@@ -90,7 +89,6 @@ label in_progress:
     play sound "sfx/lightswitch.mp3"
     pause 2
 
-
     scene my_room_apartment with dissolve
     "September 12, Monday"
     play sound "sfx/message.mp3"
@@ -143,8 +141,8 @@ label in_progress:
     dad "The first chemotherapy starting on Monday has been successfully completed today. We have a 10:00 am tomorrow appointment with LGH to remove some fluid that has been building up inside her stomach ."
     dad "Hopefully, tomorrow's procedure would make her feel more comfortable and reduce some nausea."
 
-    "September 15, Thursday"
     scene my_room_apartment with dissolve
+    "September 15, Thursday"
     play sound "sfx/message.mp3"
     pause 0.2
     dad "Today's updates:  She is doing much better this morning because she could be able to sleep almost all night last night.  The first chemo treatment really made a big difference :-)"
@@ -167,8 +165,8 @@ label in_progress:
     pause 0.2
     dad "Her fluid test today shows some improvements and only few areas still need to be watched. Also, about 1 hour ago, she just finished a small bowl of rice I bought from Lao Sze Chuan Chinese restaurant in Downers Grove."
 
-    "September 20, Tuesday"
     scene my_room_apartment with dissolve
+    "September 20, Tuesday"
     mt "Another job fair..."
     scene arc with dissolve
     "I go through the same struggle of talking to recruiters trying to impress them."
@@ -195,8 +193,8 @@ label in_progress:
     dad "Another improvement: About 1.2 liters of fluid was successfully drained out of her left lung that made her breathe better now :-)"
     dad "They estimated about 1 liter of fluid is still in her right lung but it can't be drained out at the same time with her left lung today. Therefore, the doctor will watch for 1 more week and decide to send her back to LGH or not."
 
-    "September 30, Friday"
     scene my_room_apartment with dissolve
+    "September 30, Friday"
     mt "Alright. Last job fair of the semester."
     scene to school with wiperight
     "Thankfully, this fair is more casual, so I don't have to wear a suit."
@@ -210,8 +208,8 @@ label in_progress:
     play sound "sfx/lightswitch.mp3"
     pause 2
 
-    "October 1, Saturday"
     scene my_room_apartment with dissolve
+    "October 1, Saturday"
     mt "I'm so nervous. I really want this job..."
     play sound "sfx/message.mp3"
     dad "Good luck with your 3:00 interview today!!!"
@@ -225,10 +223,235 @@ label in_progress:
     play sound "sfx/lightswitch.mp3"
     pause 2
 
+    scene my_room_apartment with dissolve
     "October 9, Sunday"
     play sound "sfx/message.mp3"
     dad "Just FYI and nothing is serious at this time: I just took her to LGH's emergency room per doctor's suggestion because she got so chilled and entire body was shaking twice today (7am and 4pm)."
-    dad " They said it's usually a symptom of some kind of infections that must be checked out right away. I'll keep everyone updated."
+    dad "They said it's usually a symptom of some kind of infections that must be checked out right away. I'll keep everyone updated."
+    mt "Weird. Sounds like that one time during Labor Day..."
+    scene living apartment with wipeleft
+    "I play some games to pass the time."
+    scene my_room_apartment_night with wiperight
+    play sound "sfx/message.mp3"
+    dad "She will be moved from this ER's temporary bed to a permanently bed to stay at least overnight tonight because of 2 bad test results below:"
+    dad "1. Her x-ray shows the new fluid was quickly rebuilt again in her left lung and of course, the old fluid still exists in her right lung."
+    dad "2. Her stomach cancer hasn't shrunk as we thought, but also has been blocking her blood go to her liver that caused her yellow eyes now (I didn't realize she got her eyes yellow until ER doctor pointed out to me)."
+    mt "..."
+    scene black with dissolve
+    play sound "sfx/lightswitch.mp3"
+    pause 2
+
+    "October 10, Monday"
+    play sound "sfx/message.mp3"
+    dad "She feels a little better with some antibiotics and after 1.4 liters of fluid was drained out of her right lung."
+    dad "She will be still staying at LGH tonight and waiting for her MRCP procedure at 8pm that will determine what the next steps will be and how long she will have to stay at LGH."
+
+    scene way home with dissolve
+    "October 11, Tuesday"
+    play sound "sfx/ringtone.mp3"
+    pause 0.9
+    m "Hello?"
+    lisa "Hey Johnny. Have you thought about visiting Mom before Thanksgiving?"
+    m "Oh yeah. Think I forgot to tell you that I'm driving up Thursday for my interview in Colorado."
+    lisa "Ok. That's good then. See you then."
+    scene apartment with dissolve
+    pause 1.0
+    scene my_room_apartment_night with wiperight
+    play sound "sfx/message.mp3"
+    dad "Based on her MRCP test last night and her current physical condition, the entire team of doctors & specialists who have been involved from beginning just made a conservative/defensive decision."
+    dad "Therefore, it seems they will keep her at LGH  until at least Friday."
+    "I still hope for the best despite the news."
+    scene black with dissolve
+    play sound "sfx/lightswitch.mp3"
+    pause 2
+
+    "October 12, Wednesday"
+    play sound "sfx/message.mp3"
+    dad "Tomorrow, if you have enough time, you could stop by LGH to visit your Mom BEFORE I take you to O'hare airport"
+    play sound "sfx/text_short.mp3"
+    m "Ok"
+
+    scene my_room_apartment with dissolve
+    "October 13, Thursday"
+    "I pack some clothes and head out to my car."
+    play sound "sfx/car_door1.mp3"
+    scene car uofi with wipeleft
+    pause 1.5
+    stop music fadeout 1.0
+    scene hospital with dissolve
+    "After the long drive, I finally make it to the hospital."
+    "I meet my dad in the parking lot to lead me to my mom's room."
+    dad "Hi Johnny. How was the drive?"
+    m "It was good."
+    dad "I've been staying with your mom at the hospital for the past few days. Her room is on the 8th floor."
+    "We head inside and take the elevator up. I rarely go to hospitals, and the atmosphere is uncomfortable."
+    scene hospital room with dissolve
+    "I see my mom on the hospital bed."
+    mom "Hi Johnny."
+    m "Hi Mommy."
+    "I go over to hug her. Her body is a lot skinnier than before. Her eyes are also a little yellow."
+    m "How are you doing?"
+    mom "Ok. Just tired."
+    "I spend a couple moments with my parents, Lisa, and Dan."
+    m "I think we have to leave for my flight now."
+    mom "Ok. Good luck with your interview Johnny."
+    m "Bye Mommy."
+    "We hug and kiss, then I leave with my dad for the airport."
+    scene black with dissolve
+    "My mom didn't look healthy at all. The shape of her face and the yellow eyes were unsettling."
+    "The plane takes off and the Chicago area lights up."
+    scene plane with dissolve
+    pause 0.5
+    scene plane blurred with dissolve
+    "I start crying for some reason. It felt like I was leaving my mom behind."
+    scene black with dissolve
+    "I tell me dad when the plane lands and head to the hotel."
+    play sound "sfx/lightswitch.mp3"
+    pause 2
+
+    "October 14, Friday"
+    scene fast with dissolve
+    "The interview goes fine. My mind is only half on it though."
+    "It was cool seeing mountains in the distance for the first time."
+    scene black with dissolve
+    "I give my dad more status updates then board the plane back."
+    scene plane back with dissolve
+    pause 1.0
+    scene black with dissolve
+    "My dad picks me up, and we head to the hospital to visit my mom again."
+    scene black with dissolve
+    show mom hospital with dissolve
+    "My mom is asleep when we enter."
+    "I stay with her a bit. I head home by myself while my dad stays with my mom."
+    scene black with dissolve
+    pause 0.3
+    scene car_suburb_night with wiperight
+    stop music fadeout 1.0
+    pause 1.0
+    scene front door night with dissolve
+    play music ["music/Home.mp3", "music/normal.mp3"] fadeout 1.5 fadein 1.5
+    #TODO: maybe change music
+    pause 1.0
+    scene dining room night with irisout
+    "It felt super weird being in the house by myself."
+    scene basement_stairs with dissolve
+    play sound "sfx/basement_down.mp3"
+    pause 1.4
+    scene basement with wipeleft
+    mt "...Mommy's work area..."
+    "I'd always see her here after coming home from a friend's house. It felt very empty without her sitting on the couch."
+    scene basement_stairs with wiperight
+    play sound "sfx/basement_up.mp3"
+    pause 1.4
+    scene main_stairs_up with dissolve
+    play sound "sfx/stair_up.mp3"
+    pause 2.4
+    scene my room house night with dissolve
+    scene black with dissolve
+    play sound "sfx/lightswitch.mp3"
+    pause 2
+
+    scene my room house with dissolve
+    "October 15, Saturday"
+    "I get ready and wait for Jimmy and Sarah to come so we can drive together to the hospital."
+    scene front_door_day with dissolve
+    play sound "sfx/car_door1.mp3"
+    pause 1.7
+    scene hospital with dissolve
+    pause 1.0
+    scene hospital room with wipeleft
+    "My mom is looking much better now. Her sister is sitting next to her."
+    "We all chat for a bit and sit around."
+    "I try to get some of my homework done on my laptop during the down time."
+    "Eventually, it was time to head back."
+    scene car_suburb_night with wiperight
+    pause 1.0
+    scene front door night with dissolve
+    pause 1.0
+    scene my room house night with dissolve
+    pause 1.0
+    scene black with dissolve
+    play sound "sfx/lightswitch.mp3"
+    pause 2
+
+    scene my room house with dissolve
+    "October 16, Sunday"
+    "I pack my stuff and head to the hospital to visit my mom before driving back to campus."
+    scene front_door_day with dissolve
+    play sound "sfx/car_door1.mp3"
+    pause 1.7
+    scene hospital with dissolve
+    pause 1.0
+    scene hospital room with wipeleft
+    "I see Lisa and Dan before heading into the room."
+    lisa "Hi Johnny. Mommy is awake right now."
+    m "Hey. Alright, thanks."
+    "A close relative is visiting my mom at the moment."
+    linda "Hey Johnny! How did your interview go?"
+    m "Good I think."
+    linda "I was talking to your mom about how hard working you are with graduating a year early and flying to all these interviews."
+    m "Heh yeah..."
+    "We catch up on recent events ranging from my school life to her new kid."
+    "While we're talking my mom waves over coyly making us both laugh."
+    linda "I think it's time for me to go. Have some food for your trip back to school!"
+    m "Oh, thanks!"
+    "Lisa and Dan come back to the room after Linda leaves with her kids."
+    scene black with dissolve
+    pause 1.0
+    scene hospital room with dissolve
+    "Time passes as we talk about random things."
+    mom "Johnny, should you leave soon? I don't want you to drive back when it's dark."
+    m "It's fine. I can stay for a little bit longer."
+    scene black with dissolve
+    pause 1.0
+    scene hospital room with dissolve
+    lisa "We're going to head out now."
+    "I get up to leave with them."
+    lisa "You don't have to leave too. You can spend more time with Mommy."
+    m "Nah, I should start driving now."
+    m "Bye Mommy."
+    mom "Bye Johnny."
+    "We hug and kiss. I head out to the parking lot with Dan and Lisa after."
+    scene hospital with wiperight
+    dan "See ya Johnny. Safe driving."
+    m "Yup. Bye."
+
+label in_progress:
+
+
+    #music again?
+    play audio "sfx/car_door1.mp3"
+    scene car_to_campus with dissolve
+    "I blast music unnecessarily loud on the rides by myself."
+    "I reach campus at night time."
+    scene apartment with dissolve
+    pause 1.0
+    scene my_room_apartment_night with wipeleft
+    "After seeing my mom in the hospital, I decide to meet up with a classmate to talk about it."
+    play sound "sfx/text.mp3"
+    m "Yo are you free to talk tonight?"
+    play sound "sfx/message.mp3"
+    pause 0.5
+    ambika "Mhm!"
+    play sound "sfx/text_long.mp3"
+    m "Great I'll tell you when I'm about to head over then"
+    play sound "sfx/message.mp3"
+    pause 0.5
+    ambika "Are you okay? You sound very serious"
+    play sound "sfx/text.mp3"
+    m "Mmm yeah you'll see I guess"
+    play sound "sfx/message.mp3"
+    pause 0.5
+    ambika ".__. Ok!"
+
+
+    "October 17, Monday"
+
+    "October 18, Tuesday"
+
+    "October 19, Wednesday"
+
+
 
 
     jump chapter4

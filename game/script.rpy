@@ -22,6 +22,8 @@ define kevin = Character ("Kevin", who_color = "d15629")
 define tad = Character ("Tad", who_color = "#ea3535")
 define joe = Character ("Joe", who_color = "#e5ad34")
 
+define linda = Character ("Linda", who_color = "#2d1b96")
+
 define speaker = Character ("Commencement Speaker", who_color = "#E84A27")
 define prof = Character ("Professor", who_color = "#13294b")
 

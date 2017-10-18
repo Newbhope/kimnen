@@ -21,6 +21,7 @@ label chapter1:
     pause 0.5
 
     m "Alright. Let’s load the car and head out."
+    play sound "sfx/car_door1.mp3"
     scene car uofi with wipeleft
     "Just like the other times I’ve driven back to the Chicago suburbs, I play through video game soundtracks while talking about random things with my friends."
     scene car midway1 with dissolve
