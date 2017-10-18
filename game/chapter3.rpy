@@ -54,7 +54,6 @@ label chapter3:
     play sound "sfx/lightswitch.mp3"
     pause 2
 
-
     "At the same time, my dad keeps everyone updated on my mom's status."
     "September 8, Thursday"
     scene my_room_apartment with dissolve
@@ -360,10 +359,14 @@ label chapter3:
     scene hospital with dissolve
     pause 1.0
     scene hospital room with wipeleft
-    "My mom is looking much better now. Her sister is sitting next to her."
+    "My mom is looking much better now."
+    scene black with dissolve
+    pause 0.8
+    scene hospital room with dissolve
+    "After a few moments, her sister, Di Tu, comes to visit."
     "We all chat for a bit and sit around."
     "I try to get some of my homework done on my laptop during the down time."
-    "Eventually, it was time to head back."
+    "Eventually, it was time to head back home."
     scene car_suburb_night with wiperight
     pause 1.0
     scene front door night with dissolve
@@ -443,15 +446,122 @@ label in_progress:
     play sound "sfx/message.mp3"
     pause 0.5
     ambika ".__. Ok!"
+    scene black with wiperight
+    "I head over to Ambika's place after a bit."
+    scene ambika apartment with dissolve
+    play sound "sfx/door.mp3"
+    pause 0.5
+    m "Hey."
+    ambika "Hey! So, what did you want to talk about?"
+    m "Yeah... so I haven't told you this even though we've been going to class together for the past semester."
+    #fadeout any existing music
+    m "My mom was diagnosed with stage four stomach cancer back around Labor Day."
+    "I show her a picture of my mom in the hospital bed."
+    show mom hospital with dissolve
+    m "I just saw her in the hospital, and she didn't look that good..."
+    hide mom hospital with dissolve
+    ambika "I don't know what to say... You've been acting surprisingly normal considering what you're going through."
+    ambika "Do you want tea or anything?"
+    #omitting that we got dinner
+    m "Sure. Tea would be nice."
+    scene black with dissolve
+    "We chat about school, jobs, and my situation for a bit."
+    scene ambika apartment with dissolve
+    m "Thanks for talking with me. I think it helped a little."
+    ambika "No problem! You're free to come over anytime."
+    scene black with dissolve
+    pause 1
+    scene my_room_apartment_night with wipeleft
+    pause 1
+    play sound "sfx/lightswitch.mp3"
+    scene black with dissolve
+    pause 2
 
-
+    scene my_room_apartment with dissolve
     "October 17, Monday"
+    "I spend a lot of the day catching up on missed work from last Thursday and Friday."
+    "I also go through two phone interviews that I got from applying online."
+    play sound "sfx/message.mp3"
+    pause 0.2
+    dad "Since her T-Tube and PleurX systems have been improving her condition as well as she can eat some puréed & strained soups for last 2 days,"
+    dad "her missing 3rd chemo treatment has been resuming today and will be continuously running for next 46 hours at her LGH room so she doesn't have to travel to the cancer clinic as did her first 2 chemo treatments."
+    dad "Doctors said this chemo treatment is very crucial because its result will determine IF they can continue providing their further treatments to her cancer or not. Let's pray harder for her last challenge!"
+    scene my_room_apartment_night with dissolve
+    pause 1
+    play sound "sfx/lightswitch.mp3"
+    scene black with dissolve
+    pause 2
+    #Showed Patrick picture of my mom on the hospital bed after trying to"
+    #Scontact Tad probably around here
 
+    scene my_room_apartment with dissolve
     "October 18, Tuesday"
+    scene to school with wiperight
+    pause 0.8
+    scene siebel with dissolve
+    pause 1.0
+    scene way home with dissolve
+    #TODO: maybe different way home pic
+    play sound "sfx/message.mp3"
+    pause 0.2
+    dad "So far, she has no problem with her resumed 3rd chemo treatment, but after eating a cup of soup this morning, she feel painful until now at her tummy area :-(  Therefore, they just took her downstairs for x-ray. We are still waiting for the x-ray results."
+    scene apartment with dissolve
+    pause 1
+    scene black with dissolve
+    pause 1
+    scene my_room_apartment_night with wipeleft
+    "After dinner, I start up a Dota game with my friends."
+    scene dota_start with dissolve
+    pause 1
+    scene dota middle with dissolve
+    play sound "sfx/dota.mp3"
+    "The game starts, and we're all engrossed in the battle."
+    scene my_room_apartment_night with hpunch
+    play sound "sfx/ringtone.mp3"
+    mt "!"
+    m "Hello?"
+    dad "Hi Johnny."
+    m "Hi Daddy."
+    scene dota middle with dissolve
+    "I mute the voice call I have with my friends and continue playing the game while holding the phone."
+    dad "Your mom came back from an operation and is in critical condition now..."
+    m "Should I... go home soon then?"
+    dad "When's the soonest you can come back?"
+    m "Um... I have an interview tomorrow on campus. I can go home this weekend at the least and stay home until like Tuesday."
+    dad "Can you go come home sooner?"
+    "While the call is going, I'm still playing Dota."
+    m "I guess I can skip class after the interview."
+    dad "What time is your interview?"
+    m "Uh 11 AM."
+    dad "Ok. It's best if you come back as soon as possible."
+    m "Alright. Bye Daddy."
+    dad "Bye Johnny."
+    "I give a deep sigh, unmute my mic, and head back to the game."
+    scene black with dissolve
+    pause 1
+    scene dota_end with dissolve
+    "We win after 48 minutes."
+    eben "Type easy mid. I-Z-I mid."
+    patrick "Easy."
+    eben "Hahaha."
+    m "Alright, I gotta go. Cya guys."
 
+    scene my_room_apartment_night with dissolve
+    mt "I need to tell my professors that I can't make class..."
+    "I pack up my laptop and head outside."
+    scene night with wiperight
+    "The night air is cold and refreshing. It calms me down a bit."
+    play sound "sfx/ringtone.mp3"
+    m "Hello?"
+    jimmy "Hey Johnny. It's not looking too good... Her breathing is getting slower."
+    m ""
+
+
+
+    scene black with dissolve
     "October 19, Wednesday"
-
-
+    play sound "sfx/lightswitch.mp3"
+    scene my_room_apartment_night
 
 
     jump chapter4
