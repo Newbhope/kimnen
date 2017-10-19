@@ -21,12 +21,13 @@ label in_progress:
     pm "Special thanks to all the family and friends that supported me during the hardest time of my life,"
     hide mom5 with dissolve
     pm "RenPy for making this project much easier and possible,"
-    pm "And you, for spending the time to read through this game."
+    pm "and you, for spending the time to read through this game."
     show momfinal at center_above_03 with dissolve
-    pause 1
 
 python:
     while (renpy.music.is_playing(channel='music')):
-        renpy.pause()
-
-return
+        if renpy.music.is_playing(channel='music'):
+            renpy.pause(1)
+        else:
+            break
+        #supposed to end the game automatically when the song is done

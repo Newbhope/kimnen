@@ -343,7 +343,7 @@ label chapter1:
     "I wave goodbye to my parents then head off to my friends' houses."
     #
     #scene black with dissolve
-    #stop music fadeout 1.0
+    stop music fadeout 1.0
     #pm "Unbeknownst to me at the time, that would be the last I’d see my mom in a healthy state."
 
     #pause 1.0

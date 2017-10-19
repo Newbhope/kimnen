@@ -1,8 +1,7 @@
 label chapter3:
 
 
-    #TODO: maybe new song
-    play music "music/everyday1.mp3"
+    play music ["music/sadly everyday.mp3", "music/try to be normal.mp3"] fadeout 1.5 fadein 1.5
     scene car_to_campus with dissolve
     "Nothing really changes from the last drive to campus."
     scene black with dissolve
@@ -328,7 +327,6 @@ label chapter3:
     scene black with dissolve
     pause 0.3
     scene car_suburb_night with wiperight
-    stop music fadeout 1.0
     pause 1.0
     scene front door night with dissolve
     pause 1.0
@@ -425,13 +423,12 @@ label chapter3:
     dan "See ya Johnny. Safe driving."
     m "Yup. Bye."
 
-
-
-    #music again?
+    play music ["music/sadly everyday.mp3", "music/try to be normal.mp3"] fadeout 2.0 fadein 2.0
     play audio "sfx/car_door1.mp3"
     scene car_to_campus with dissolve
-    "I blast music unnecessarily loud on the rides by myself."
     "I reach campus at night time."
+    scene black with dissolve
+    pause 0.7
     scene apartment with dissolve
     pause 1.0
     scene my_room_apartment_night with wipeleft
@@ -459,7 +456,6 @@ label chapter3:
     m "Hey."
     ambika "Hey! So, what did you want to talk about?"
     m "Yeah... so I haven't told you this even though we've been going to class together for the past semester."
-    #fadeout any existing music
     m "My mom was diagnosed with stage four stomach cancer back around Labor Day."
     "I show her a picture of my mom in the hospital bed."
     show mom hospital with dissolve
@@ -530,6 +526,7 @@ label chapter3:
     scene dota middle with dissolve
     "I mute the voice call I have with my friends and continue playing the game while holding the phone."
     dad "Your mom came back from an operation and is in critical condition now..."
+    stop music fadeout 1
     m "Should I... go home soon then?"
     dad "When's the soonest you can come back?"
     m "Um... I have an interview tomorrow on campus. I can go home this weekend at the least and stay home until like Tuesday."
@@ -552,6 +549,7 @@ label chapter3:
     eben "Hahaha."
     m "Alright, I gotta go. Cya guys."
 
+    play music "music/doom.mp3" fadein 1
     scene my_room_apartment_night with dissolve
     mt "I need to tell my professors that I can't make class..."
     "I pack up my laptop and head outside."
@@ -648,7 +646,7 @@ label chapter3:
     m "I couldn't sleep and decided to drive."
     lisa "Oh. She's inside. They put her on morphine, so she can't respond that much..."
     scene hospital room night with dissolve
-    play music "kim nen broken.mp3"
+    play music "music/kim nen broken.mp3"
     lisa "Mommy, Johnny's here."
     mom "Nnn...."
     "Only a groan escapes her lips when she sees me."

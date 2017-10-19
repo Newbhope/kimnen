@@ -77,7 +77,8 @@ label chapter4:
     speaker "While I'm up here, I'll remind everyone that tomorrow is Mother's Day."
     speaker "Your moms helped every one of you get here, to this point of accomplishment."
     speaker "So make sure you thank them tomorrow, cook them a nice breakfast, and maybe do the cleaning for once."
-    m "Yeah... Thanks Mommy."
+    m "Yeah..."
+    m "Thanks Mommy."
 
     scene black with dissolve
     pause 2.0

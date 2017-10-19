@@ -58,8 +58,6 @@ label start:
     scene black
     pause 1.0
 
-    jump in_progress
-
     pm "This... is a hard story to tell."
 
     pm "Thinking of {color=#cc0066}{b}her{/b}{/color} floods me with emotions and memories. It makes me sad just remembering old times."
