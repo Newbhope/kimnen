@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/chapter3.rpy", line 208: expected 'simple_expression' not found.
-    scene my_room_apartment_night with
-                                      ^
+File "game/afterword.rpy", line 7: Line is indented, but the preceding play music statement statement does not expect a block. Please check this line's indentation.
+    pm "The events in this game are as true as possible."
+    ^
 
 Ren'Py Version: Ren'Py 6.99.12.4.2187

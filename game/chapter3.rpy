@@ -253,6 +253,8 @@ label chapter3:
     lisa "Hey Johnny. Have you thought about visiting Mom before Thanksgiving?"
     m "Oh yeah. Think I forgot to tell you that I'm driving up Thursday for my interview in Colorado."
     lisa "Ok. That's good then. See you then."
+    play sound "sfx/hangup.mp3"
+    pause 1.0
     scene apartment with dissolve
     pause 1.0
     scene my_room_apartment_night with wiperight
@@ -285,6 +287,7 @@ label chapter3:
     dad "I've been staying with your mom at the hospital for the past few days. Her room is on the 8th floor."
     "We head inside and take the elevator up. I rarely go to hospitals, and the atmosphere is uncomfortable."
     scene hospital room with dissolve
+    play music "music/doom.mp3"
     "I see my mom on the hospital bed."
     mom "Hi Johnny."
     m "Hi Mommy."
@@ -328,8 +331,6 @@ label chapter3:
     stop music fadeout 1.0
     pause 1.0
     scene front door night with dissolve
-    play music ["music/Home.mp3", "music/normal.mp3"] fadeout 1.5 fadein 1.5
-    #TODO: maybe change music
     pause 1.0
     scene dining room night with irisout
     "It felt super weird being in the house by myself."
@@ -416,10 +417,14 @@ label chapter3:
     mom "Bye Johnny."
     "We hug and kiss. I head out to the parking lot with Dan and Lisa after."
     scene hospital with wiperight
+    lisa "Hey... don't tell Mommy, but we're going to have our wedding sooner so she can make it."
+    lisa "It'll be a lot smaller with only close family."
+    m "Alright... why don't you tell Mommy?"
+    lisa "I don't want her to feel guilty about it."
+    m "Ok. Tell me more details when you finalize them."
     dan "See ya Johnny. Safe driving."
     m "Yup. Bye."
 
-label in_progress:
 
 
     #music again?
@@ -536,6 +541,7 @@ label in_progress:
     dad "Ok. It's best if you come back as soon as possible."
     m "Alright. Bye Daddy."
     dad "Bye Johnny."
+    play sound "sfx/hangup.mp3"
     "I give a deep sigh, unmute my mic, and head back to the game."
     scene black with dissolve
     pause 1
@@ -549,19 +555,223 @@ label in_progress:
     scene my_room_apartment_night with dissolve
     mt "I need to tell my professors that I can't make class..."
     "I pack up my laptop and head outside."
-    scene night with wiperight
-    "The night air is cold and refreshing. It calms me down a bit."
+    scene north quad with dissolve
+    "I get to a good place and start writing the emails."
+    "The night air is cool and refreshing. It calms me down a bit."
+    m "Hi, \n\nI just found out my mom is in critical condition. Are there any other days you will be on campus conducting interview?"
+    m "Or perhaps an earlier time slot tomorrow? Sorry about the inconvenience.\n\nThanks, John"
+    "I also compose emails to each of my four professors asking for deadline extensions on assignments."
+    mt "Time to head back. I'm getting pretty cold."
+    scene night with dissolve
     play sound "sfx/ringtone.mp3"
+    pause 1.0
     m "Hello?"
     jimmy "Hey Johnny. It's not looking too good... Her breathing is getting slower."
-    m ""
+    m "I just emailed my professors, so I can go home after an interview tomorrow morning."
+    jimmy "I'd think about canceling the interview too. I'm not sure how much longer she'll last."
+    jimmy "Get some sleep though. It'll be dangerous if you drive in the middle of the night."
+    m "Alright... See ya Jimmy."
+    play sound "sfx/hangup.mp3"
+    pause 1
+    scene my_room_apartment_night with wipeleft
+    "I mull over the situation for a bit."
+    scene black with dissolve
+    scene my_room_apartment_night with dissolve
+    mt "Screw it. I'm just going to drive out first thing in the morning tomorrow."
+    "I send out a quick email to the company."
+    m "Hi, \n\nSorry, I won't be able to make an earlier time slot tomorrow.\n\nThanks, John"
+    mt "Alright. Time to sleep."
+    play sound "sfx/lightswitch.mp3"
+    scene black with dissolve
+    pause 2
+    mt "...Fuck I can't sleep."
+    mt "What time is it?"
+    "2:50 AM\nWed, October 19"
+    play sound "sfx/lightswitch.mp3"
+    scene my_room_apartment_night with dissolve
+    mt "...I might as well just drive now. I'm not going to fall asleep anytime soon."
+    "I call my dad to let him know I'm coming."
+    "I repack my backpack and duffel bag from the last trip home. I make sure not to forget the blanket I sleep with every night."
+    scene apartment with wiperight
+    "As I'm bringing out my stuff, my roommate Brendan comes out to see what the noise is about."
+    brendan "Hey John, what's going on?"
+    m "My mom is in critical condition, so I'm driving back right now."
+    brendan "Oh... Do you need any help bringing those bags to your car?"
+    m "Actually yeah. That'd help a lot."
+    "While Brendan moves my stuff, I gather some coffee and granola bars for the drive."
+    brendan "Alright, I think everything is in your car."
+    m "Thanks a lot Brendan."
+    brendan "No problem. Drive safe."
+    m "Yup."
+    scene black with dissolve
+    "I message Ambika a quick status update before leaving as well."
 
+    play music "music/night driving.mp3"
+    scene car night 1 with dissolve
+    "I play super loud music while drinking coffee to stay awake."
+    "The first hour goes by fine. I only see trucks on the road."
+    scene black with dissolve
+    pause 1
+    scene car night 4 with dissolve
+    "Fatigue starts hitting me after two hours."
+    play sound "sfx/ringtone.mp3"
+    pause 1
+    m "Hello?"
+    dad "How close are you?"
+    m "About forty minutes away."
+    dad "Ok good. I'll start heading to the hospital too."
+    play sound "sfx/hangup.mp3"
+    pause 0.5
+    scene black with dissolve
+    "I try to stop by a McDonalds only to find that it's closed."
+    "I sigh and push on."
+    scene car night 2 with dissolve
+    "I finally make it to the suburbs. My phone runs out of battery, and my source of navigation dissapears."
+    scene car night 3 with dissolve
+    m "No!... I think I take a right turn here..."
+    scene black with dissolve
+    "Thankfully, I was correct and eventually arrive at the hospital."
+    scene hospital parking with dissolve
+    mt "5:26... I made good time."
+    "I get out of the car and start walking to the hospital."
+    scene hospital parking blurred with dissolve
+    mt "...I don't feel so good..."
+    play sound "sfx/puke.mp3"
+    pause 1.2
+    m "Maybe that coffee wasn't the best idea..."
+    "I clean myself up and hurry to get to my mom's hospital room."
 
+    stop music fadeout 1
+    scene black with dissolve
+    "I see Lisa and Dan outside the room. Lisa looks like she's been crying for a bit."
+    lisa "Johnny? I thought you weren't going to be here until later."
+    m "I couldn't sleep and decided to drive."
+    lisa "Oh. She's inside. They put her on morphine, so she can't respond that much..."
+    scene hospital room night with dissolve
+    play music "kim nen broken.mp3"
+    lisa "Mommy, Johnny's here."
+    mom "Nnn...."
+    "Only a groan escapes her lips when she sees me."
+    lisa "I'll leave you two alone."
+    "I sit in the chair next to her and hold her hand. It's deathly skinny."
+    m "Hi Mommy. I made it. I just drove from school."
+    mom "Nnnnn."
+    m "I even brought the blanket you made for me when I was little."
+    mom "Nn..."
+    "We spend a few moments together. I find it hard talking to her when can't even talk back."
+    m "Bye Mommy..."
+    "I get up and go back to the hallway to talk to Lisa and Dan."
+    scene black with dissolve
+    "Eventually, my dad comes, and we all go back to the hospital room."
+    scene hospital room night with dissolve
+    dad "Look. Johnny is here. He was able to make all the from school."
+    mom "Nnh."
+    scene black with dissolve
+    "Later in the night, Jimmy and Sarah show up."
+    scene hospital room night with dissolve
+    "A nurse comes in to check on my Mom."
+    "She has to speak louder to illicit a response from her."
+    mom "Tôi muốn đi ngủ."
+    dad "She said she wants to sleep."
+    "Nurse" "Ok. Tell me if she starts to feel pain, and we can up the morphine."
+    dad "Thanks."
+    "The nurse goes back to her station."
+    "I try to rest on a chair but don't have much luck."
+    dad "I'll get you some pillow and blankets."
+    m "Thanks."
+    scene black with dissolve
+
+    pause 1
+    scene hospital room dawn with dissolve
+    "The time on my phone reads 7:30 AM. I still don't feel much better from the sleep deprivation and the situation."
+    scene black with dissolve
+    pause 1
+    scene hospital room dawn with dissolve
+    "Two close family members are able to make it."
+    "We all wait for her time to come."
+    scene black with dissolve
+    pause 1
+    scene hospital room dawn with dissolve
+    "The cancer doctor comes in to check on my Mom."
+    doctor "How are you doing Nen? Nod yes if you can hear me."
+    "My mom nods back."
+    dad "Is there anything else you can do?"
+    doctor "Unfortunately, she is too weak for any operations. Her cancer has spread to too many organs and is causing them to fail."
+    dad "Thanks for all of your work."
+    scene black with dissolve
+    pause 1
+    scene hospital room dawn with dissolve
+    "Her breathing gets really soft and shallow."
+    lisa "...did it happen?"
+    "We call the nurse in to check."
+    "Nurse" "No. It's faint, but you can still hear her breathing. Her breathing will get shallower and shallower as she gets closer."
+    "I don't even see her chest move with each breathe."
+    scene black with dissolve
+    pause 1
+    scene hospital room dawn with dissolve
+    "We notice my mom's eyes are half open, just like when she sleeps normally."
+    "We're able to joke around about it since I do it too."
+    scene black with dissolve
+    pause 1
+    scene hospital room dawn with dissolve
+    "The wait is excruciating. I still felt shitty from the past few hours."
+    scene black with dissolve
+    pause 1
+    scene hospital room dawn with dissolve
+    "My mom's quiet breath seems to start stopping. We crowd around the bed."
+    scene black with dissolve
+    pause 1
+    scene hospital room dawn with dissolve
+    "Her breath appears to stop. We call in the nurse to make sure."
+    "Nurse" "She has passed. I'm sorry for your loss. The doctor will come in to give the final word."
+    stop music fadeout 1
+    scene black with dissolve
+    pause 1
+    scene hospital room dawn with dissolve
+    "The doctor checks her body for a few moments."
+    doctor "Kim Nen Bui has passed this world at 8:17 AM. I'm sorry for your loss."
+    "I sit there in a stupor grasping my blanket."
 
     scene black with dissolve
-    "October 19, Wednesday"
-    play sound "sfx/lightswitch.mp3"
-    scene my_room_apartment_night
-
+    pause 1
+    scene hospital room dawn with dissolve
+    "A grief counselor comes in the room and starts reading buddhist scriptures."
+    "I leave and head to the waiting room at the corner of the floor."
+    scene chicago skyline with dissolve
+    "The room looks out to Chicago. The sun has started creeping up on the Windy City."
+    "I give Ambika a last status update and just look out to the skyline."
+    "I feel empty and exhausted."
+    scene black with dissolve
+    show me with dissolve
+    "I take a picture of myself to commemorate the moment I guess."
+    scene hospital room with dissolve
+    m "Hey... I don't feel too good. I'm going to go outside."
+    sarah "I can go with you."
+    scene black with dissolve
+    "I take a breather outside, and we chat for a little. We decide I need to rest."
+    sarah "Let's get your stuff from the room, and then I can drive you home."
+    m "Alright."
+    scene hospital room with dissolve
+    "I see my mom's sister in the room now. She lives in Michigan and wasn't able to catch my mom before she passed."
+    m "Hey. Sarah's going to drive me home so I can sleep."
+    "I grab my bag and leave."
+    scene black with dissolve
+    pause 1.5
+    scene front_door_day with dissolve
+    pause 1.5
+    scene main_stairs_up with dissolve
+    pause 1.5
+    scene my room house with wipeleft
+    "I crawl into my bed and pass out from weariness."
+    scene black with dissolve
+    pause 2
+    scene my room house with dissolve
+    mt "...Why am I at the house...?"
+    mt "Oh yeah."
+    scene my room house blurred with dissolve
+    mt "Mommy just died."
+    scene black with dissolve
+    "My mom, Kim Nen Thi Bui, passed away in the very same hospital where she gave birth to me and my sister."
+    pause 2
 
     jump chapter4

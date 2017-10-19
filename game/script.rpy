@@ -21,11 +21,13 @@ define danM = Character ("Dan M", who_color = "#3f7f11")
 define kevin = Character ("Kevin", who_color = "d15629")
 define tad = Character ("Tad", who_color = "#ea3535")
 define joe = Character ("Joe", who_color = "#e5ad34")
+define eben = Character ("Eben", who_color = "#138e1e")
 
 define linda = Character ("Linda", who_color = "#2d1b96")
 
 define speaker = Character ("Commencement Speaker", who_color = "#E84A27")
 define prof = Character ("Professor", who_color = "#13294b")
+define doctor = Character ("Doctor", who_color = '#0d0c59')
 
 image black = "#000000"
 
@@ -36,6 +38,14 @@ transform center_above:
 transform center_above_03:
     xalign 0.5
     yalign 0.2
+
+transform rightAbove:
+    xalign 0.9
+    yalign 0.2
+
+transform leftAbove:
+    xalign 0.1
+    yalign 0.1
 
 label splashscreen:
 
